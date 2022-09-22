@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import { usePreviewSubscription } from "../../lib/sanity";
 import { getClient } from "../../lib/sanity.server";
-import { postQuery, authorQuery } from "../../api/Api";
+import { postQuery, authorQuery } from "../../request/Request";
 import Article from "../components/singleArticle/Article";
-import { multipleRequest } from "../../api/Api";
+// import { multipleRequest } from "../../rq/Api";
 
 const articleRequest = `*[_type == "post" && slug.current == $slug][0]{_createdAt,title,slug,body,mainImage,'author':{author ->}}`;
 

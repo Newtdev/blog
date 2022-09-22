@@ -10,7 +10,7 @@ import { SpecialEdition } from "./components/blog/Blog";
 import { NewsUI } from "./components/shared/SharedComponent";
 
 import { authorContext } from "../context/Author";
-import { categoryQuery, postQuery, authorQuery } from "../api/Api";
+import { categoryQuery, postQuery, authorQuery } from "../request/Request";
 
 function News({ data }) {
   const [specialPostData, setData] = useState({});

@@ -28,7 +28,7 @@ const Header = () => {
       <div className='bg-[#00496e] py-2 px-3 md:py-4 xl:px-24 md:px-4 flex justify-between items-center'>
         <div className='flex justify-between items-center w-full md:w-fit'>
           <Link href='/'>
-            <Image src={logo} alt='Rencoin' />
+            <Image src={logo} alt='Rencoin' className='cursor-pointer' />
           </Link>
           <div onClick={navHandler} className='cursor-pointer md:hidden'>
             {/* {nav ? (
