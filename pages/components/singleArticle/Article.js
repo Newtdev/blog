@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { formatDate, ImageURL } from "../shared/SharedLogic";
-import textComponent from "./PortableTextFunction";
+import { textComponent } from "./PortableTextFunction";
 import {
   PortableTextComponentsProvider,
   PortableText,

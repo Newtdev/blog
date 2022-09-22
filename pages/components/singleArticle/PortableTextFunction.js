@@ -18,7 +18,7 @@ const SampleImageComponent = ({ value, isInline }) => {
   );
 };
 
-const textComponent = {
+export const textComponent = {
   block: {
     h1: ({ children }) => <h1 className='text-4xl py-4 lg:py-6'>{children}</h1>,
     h2: ({ children }) => <h2 className='text-3xl py-4 lg:py-6'>{children}</h2>,
@@ -77,5 +77,3 @@ const textComponent = {
     ),
   },
 };
-
-export default textComponent;
