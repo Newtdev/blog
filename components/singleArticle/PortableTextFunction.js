@@ -1,5 +1,5 @@
 import { getImageDimensions } from "@sanity/asset-utils";
-import { urlFor } from "../../../lib/sanity";
+import { urlFor } from "../../lib/sanity";
 
 const SampleImageComponent = ({ value, isInline }) => {
   // const { width, height } = getImageDimensions(value);
