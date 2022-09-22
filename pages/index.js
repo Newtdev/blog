@@ -6,8 +6,8 @@ import { useEffect } from "react";
 import { useCallback } from "react";
 import { Fragment } from "react";
 import { getClient } from "../lib/sanity.server";
-import { SpecialEdition } from "./components/blog/Blog";
-import { NewsUI } from "./components/shared/SharedComponent";
+import SpecialEdition from "../components/blog/SpecialEdition";
+import NewsUI from "../components/shared/SharedComponent";
 
 import { authorContext } from "../context/Author";
 import { categoryQuery, postQuery, authorQuery } from "../request/Request";

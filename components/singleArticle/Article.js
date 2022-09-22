@@ -1,11 +1,12 @@
 import { Fragment } from "react";
-import { formatDate, ImageURL } from "../shared/SharedLogic";
+import { formatDate } from "../shared/SharedLogic";
+import ImageURL from "../shared/SharedLogic";
 import { textComponent } from "./PortableTextFunction";
 import {
   PortableTextComponentsProvider,
   PortableText,
 } from "@portabletext/react";
-import { NewsUI } from "../shared/SharedComponent";
+import NewsUI from "../shared/SharedComponent";
 
 const Content = ({ post }) => {
   return (

@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Paragraph } from "../blog/Blog";
-import { ImageURL } from "./SharedLogic";
+// import { Paragraph } from "../blog/Blog";
+import Paragraph from "../blog/Paragraph";
+import ImageURL from "./SharedLogic";
 
-export function NewsUI({ post_data, author }) {
+function NewsUI({ post_data, author }) {
   // const author = useContext(authorContext);
   return (
     <div className='w-[95%] flex justify-between md:flex-row px-3 flex-col mx-auto transition hover:shadow-lg cursor-pointer'>
@@ -21,3 +22,4 @@ export function NewsUI({ post_data, author }) {
     </div>
   );
 }
+export default NewsUI;
