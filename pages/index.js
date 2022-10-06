@@ -1,6 +1,7 @@
 // import Head from 'next/head'
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
+import Subheader from "../components/pagesubheader/Subheader";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useCallback } from "react";
@@ -69,7 +70,8 @@ function News({ data }) {
 
   return (
     <authorContext.Provider value={authorData}>
-      <main className='min-h-screen max-w-screen mt-24'>
+      <main className='min-h-screen max-w-screen mt-10'>
+        <Subheader/>
         <article className='container mx-auto h-full w-full'>
           <div className='pb-16'>{displaySpecialEdition_data()}</div>
           <div className='w-full grid grid-cols-1 md:grid-cols-2 md:grid-cols-2 mt-12 py-6 gap-x-2 gap-y-6 px-4 lg:w-[75%] mx-auto'>

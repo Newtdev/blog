@@ -5,6 +5,7 @@ export function formatDate(date) {
 }
 
 export function shortDescription(desc) {
+  if(!desc) return
   const shorten = desc.split(" ");
   return shorten.length < 17
     ? shorten.join(" ")
