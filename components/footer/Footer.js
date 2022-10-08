@@ -8,6 +8,7 @@ import Link from "next/link";
 // import image from "c";
 
 function Footer() {
+  const baseURL = 'http://rencoin.renmiss.com'
   return (
     <Fragment>
       <footer>
@@ -27,54 +28,54 @@ function Footer() {
               <ul>
                 <p className='text-lg font-bold text-white'>Rencoin</p>
                 <li className=' text-md text-white my-3'>
-                  <Link href='/why-rencoin'>Why Rencoin?</Link>
+                  <Link href={`${baseURL}/why-rencoin`}>Why Rencoin?</Link>
                 </li>
                 <li className=' text-md  text-white'>
-                  <Link href='/how-it-works'>How It Works</Link>
+                  <Link href={`${baseURL}/how-it-works`}>How It Works</Link>
                 </li>
                 <li className=' text-md text-white my-3'>
-                  <Link href='/knowledge'>Knowledge Base</Link>
+                  <Link href={`${baseURL}/knowledge`}>Knowledge Base</Link>
                 </li>
                 <li className=' text-md text-white my-3'>
-                  <Link href='/transparent'>Transparency</Link>
+                  <Link href={`${baseURL}/transparent`}>Transparency</Link>
                 </li>
                 <li className=' text-md text-white '>
-                  <Link href='/fees'>Fees</Link>
+                  <Link href={`${baseURL}/fees`}>Fees</Link>
                 </li>
               </ul>
             </div>
             <div>
               <ul>
                 <p className='text-lg font-bold text-white'>
-                  <Link href='/company'>Company</Link>
+                  <Link href={`${baseURL}/company`}>Company</Link>
                 </p>
                 <li className=' text-md text-white my-3'>
-                  <Link href='/about-us'> About Us</Link>
+                  <Link href={`${baseURL}/about-us`}> About Us</Link>
                 </li>
                 <li className=' text-md text-white my-3'>
-                  <Link href='/contact'>Contact Us</Link>
+                  <Link href={`${baseURL}/contact`}>Contact Us</Link>
                 </li>
                 <li className=' text-md  text-white'>
-                  <Link href='/terms'> Legal Terms</Link>
+                  <Link href={`${baseURL}/terms`}> Legal Terms</Link>
                 </li>
               </ul>
             </div>
             <div>
               <ul>
                 <p className='text-lg font-bold text-white'>
-                  <Link href='/resources'>Resources</Link>
+                  <Link href={`${baseURL}/resources`}>Resources</Link>
                 </p>
                 <li className=' text-md text-white my-3'>
-                  <Link href='/news'>News</Link>
+                  <Link href="/">Blog</Link>
                 </li>
                 <li className=' text-md  text-white '>
-                  <Link href='/faq'>FAQs</Link>
+                  <Link href={`${baseURL}/faq`}>FAQs</Link>
                 </li>
                 <li className=' text-md text-white my-3'>
-                  <Link href='/rencoin-facts'>Rencoin Facts</Link>
+                  <Link href={`${baseURL}/rencoin-facts`}>Rencoin Facts</Link>
                 </li>
                 <li className=' text-md  text-white'>
-                  <Link href='/whitepaper'>Whitepaper</Link>
+                  <Link href={`${baseURL}/whitepaper`}>Whitepaper</Link>
                 </li>
               </ul>
             </div>

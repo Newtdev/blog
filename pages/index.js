@@ -96,7 +96,7 @@ export const getStaticProps = async ({ preview = false }) => {
 
   return {
     props: { data: { postData, authorData, categoryData } },
-    // revalidate: 10, // In seconds
+   revalidate: 10, // In seconds
   };
 };
 
